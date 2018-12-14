@@ -1,0 +1,125 @@
+<ns0:test-suite xmlns:ns0="urn:model.allure.qatools.yandex.ru" start="1544753216955" stop="1544753217023">
+  <name>test01</name>
+  <labels/>
+  <test-cases>
+    <test-case start="1544753216955" status="passed" stop="1544753216959">
+      <name>Test01.test001</name>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="5884-MainThread"/>
+        <label name="host" value="MS-20180906QJYH"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps>
+        <step start="1544753216959" status="passed" stop="1544753216959">
+          <name>新增方法操作</name>
+          <title>新增方法操作</title>
+          <attachments>
+            <attachment source="8237be4e-5bd3-4be2-82c8-00b595f4d814-attachment.txt" title="描述：" type="text/plain"/>
+          </attachments>
+          <steps/>
+        </step>
+      </steps>
+    </test-case>
+    <test-case start="1544753216963" status="passed" stop="1544753216966">
+      <name>Test01.test002</name>
+      <attachments/>
+      <labels>
+        <label name="severity" value="critical"/>
+        <label name="thread" value="5884-MainThread"/>
+        <label name="host" value="MS-20180906QJYH"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps>
+        <step start="1544753216965" status="passed" stop="1544753216966">
+          <name>修改方法操作</name>
+          <title>修改方法操作</title>
+          <attachments>
+            <attachment source="3ca921c9-af86-48de-ad12-d992d3542f89-attachment.txt" title="test02被修改" type="text/plain"/>
+          </attachments>
+          <steps/>
+        </step>
+      </steps>
+    </test-case>
+    <test-case start="1544753216968" status="passed" stop="1544753216970">
+      <name>Test01.test003</name>
+      <attachments/>
+      <labels>
+        <label name="severity" value="minor"/>
+        <label name="thread" value="5884-MainThread"/>
+        <label name="host" value="MS-20180906QJYH"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps>
+        <step start="1544753216970" status="passed" stop="1544753216970">
+          <name>查询所有方法操作</name>
+          <title>查询所有方法操作</title>
+          <attachments>
+            <attachment source="af2dbe7d-a115-4f0e-98f4-3f6b0168b803-attachment.txt" title="描述：" type="text/plain"/>
+          </attachments>
+          <steps/>
+        </step>
+      </steps>
+    </test-case>
+    <test-case start="1544753216973" status="failed" stop="1544753217019">
+      <name>Test01.test004</name>
+      <failure>
+        <message>AssertionError: assert 0</message>
+        <stack-trace>self = &lt;test01.Test01 object at 0x03333510&gt;
+
+    @pytest.allure.severity(pytest.allure.severity_level.BLOCKER)
+    @allure.step("查询指定方法操作")
+    def test004(self):
+        allure.attach("描述：", "test04被查询")
+        print("test004被执行")
+&gt;       assert 0
+E       assert 0
+
+scripts\test01.py:38: AssertionError</stack-trace>
+      </failure>
+      <attachments/>
+      <labels>
+        <label name="severity" value="blocker"/>
+        <label name="thread" value="5884-MainThread"/>
+        <label name="host" value="MS-20180906QJYH"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps>
+        <step start="1544753216975" status="failed" stop="1544753216978">
+          <name>查询指定方法操作</name>
+          <title>查询指定方法操作</title>
+          <attachments>
+            <attachment source="0c090c62-07ee-4e55-a69f-5a047287fd73-attachment.txt" title="描述：" type="text/plain"/>
+          </attachments>
+          <steps/>
+        </step>
+      </steps>
+    </test-case>
+    <test-case start="1544753217021" status="passed" stop="1544753217023">
+      <name>Test01.test005</name>
+      <attachments/>
+      <labels>
+        <label name="severity" value="normal"/>
+        <label name="thread" value="5884-MainThread"/>
+        <label name="host" value="MS-20180906QJYH"/>
+        <label name="framework" value="pytest"/>
+        <label name="language" value="cpython3"/>
+      </labels>
+      <steps>
+        <step start="1544753217023" status="passed" stop="1544753217023">
+          <name>删除方法操作</name>
+          <title>删除方法操作</title>
+          <attachments>
+            <attachment source="258fd3aa-6210-4fb9-a3ba-9d93c9375d0d-attachment.txt" title="描述：" type="text/plain"/>
+          </attachments>
+          <steps/>
+        </step>
+      </steps>
+    </test-case>
+  </test-cases>
+</ns0:test-suite>
